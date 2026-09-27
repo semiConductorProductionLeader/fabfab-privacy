@@ -11,29 +11,39 @@
   h3 { margin-top: 1.6em; font-size: 1.05em; }
   nav a { margin-right: 1em; }
   .date { color: #666; }
+  .biz { margin-top: 3em; padding-top: 1em; border-top: 1px solid #ddd; color: #666; font-size: 0.9em; }
 </style>
 </head>
 <body>
-<!-- 구현사항 147 §4. 연락처 = Play Console 개발자 연락처 이메일. -->
+<!-- 구현사항 147 §4, 223 §2. 연락처 = Play Console 개발자 연락처 이메일. 사업자 정보는 맨 아래 한 곳(id="biz"). -->
 <h1>FabFab Defense — 개인정보처리방침 / Privacy Policy / プライバシーポリシー</h1>
-<p class="date">시행일 / Effective / 施行日: 2026-09-26</p>
+<p class="date">시행일 / Effective / 施行日: 2026-09-27</p>
 <p><a href="../">← FabFab Defense</a></p>
 <nav><a href="#ko">한국어</a><a href="#en">English</a><a href="#ja">日本語</a></nav>
 
 <section id="ko">
 <h2>한국어</h2>
-<p>factoryjam(이하 "개발자")은 모바일 게임 「팹팹 디펜스」(이하 "게임")를 이용하는 분의 개인정보를 소중히 다룹니다. 이 방침은 게임이 어떤 정보를 어떻게 다루는지 설명합니다.</p>
+<p>팩토리잼(factoryjam, 이하 "개발자")은 모바일 게임 「팹팹 디펜스」(이하 "게임")를 이용하는 분의 개인정보를 소중히 다룹니다. 이 방침은 게임이 어떤 정보를 어떻게 다루는지 설명합니다.</p>
 <h3>1. 수집하는 정보</h3>
+<p>게임은 온라인 기능(협동 매칭, 진행 저장, 구매 확인)을 위해 개발자의 게임 서버에 다음 정보를 저장합니다. 이름·전화번호·이메일·위치·연락처·광고 ID는 수집하지 않습니다.</p>
 <ul>
-  <li><b>현재 버전:</b> 게임은 개인정보를 수집하거나 외부로 전송하지 않습니다. 게임 진행(재화, 유닛 레벨, 설정 등)은 이용자의 기기 안에만 저장됩니다.</li>
-  <li><b>온라인 협동 기능이 열린 뒤:</b> 협동 매칭을 위해 게임이 기기에서 만든 무작위 계정 식별자, 게임 진행 정보, 판의 조작 기록을 개발자의 게임 서버에 저장합니다. 이름·전화번호·이메일·위치·연락처 같은 정보는 수집하지 않습니다.</li>
+  <li><b>계정 식별자:</b> 처음 실행할 때 서버가 만든 무작위 계정 id와 이 기기의 접속 키(서버에는 해시 값만 저장).</li>
+  <li><b>로그인 연결 정보:</b> Apple 또는 Google 계정을 연결하면, 그 서비스가 발급한 계정 고유 식별자만 저장합니다. 이메일 주소·이름은 저장하지 않습니다.</li>
+  <li><b>게임 진행 정보:</b> 재화, 유닛·설비 레벨, 패스·출석 진행, 설정 등.</li>
+  <li><b>판 기록:</b> 협동·혼자 하기 판의 조작 기록과 판 이탈 시각 (매칭, 보상 확인, 부정행위 방지용).</li>
+  <li><b>구매 기록:</b> 인앱 구매를 하면 스토어 거래·주문 번호(Apple 거래 id, Google 구매 토큰에서 만든 값), 구매한 상품, 구매 시각, 계정 id.</li>
 </ul>
+<p>서버에 연결하지 않고 할 때는 게임 진행이 이용자의 기기 안에만 저장됩니다.</p>
 <h3>2. 이용 목적</h3>
-<p>게임 기능 제공(매칭, 진행 저장, 보상 확인)과 부정행위 방지에만 씁니다. 광고·마케팅 목적으로 쓰거나 제3자에게 팔지 않습니다.</p>
-<h3>3. 제3자 제공과 SDK</h3>
-<p>현재 버전에는 광고·분석·결제 SDK가 들어 있지 않으며, 정보를 제3자에게 제공하지 않습니다. 광고나 인앱결제를 추가하면 이 방침을 먼저 갱신합니다.</p>
+<p>게임 기능 제공(매칭, 진행 저장·기기 간 이어 하기, 보상 확인), 부정행위 방지, 그리고 구매 기록으로 <b>구매한 아이템 지급, 같은 구매의 중복 지급 방지, 환불·구매 문의 처리</b>에만 씁니다. 광고·마케팅 목적으로 쓰거나 제3자에게 팔지 않습니다.</p>
+<h3>3. 결제·로그인과 제3자</h3>
+<ul>
+  <li><b>결제:</b> 인앱 구매는 Apple App Store 또는 Google Play가 처리합니다. 개발자는 카드 번호 등 결제 수단 정보를 받지 않으며, 스토어가 보낸 구매 증명을 확인해 아이템을 지급합니다. 결제 정보 처리는 각 스토어의 개인정보처리방침을 따릅니다.</li>
+  <li><b>로그인:</b> Apple 로그인·Google 로그인은 각 회사가 처리하며, 개발자는 로그인 확인에 필요한 계정 식별자만 받습니다.</li>
+  <li>게임에는 광고·분석 SDK가 들어 있지 않으며, 위의 경우 말고는 정보를 제3자에게 제공하지 않습니다.</li>
+</ul>
 <h3>4. 보관과 삭제</h3>
-<p>기기에 저장된 정보는 게임을 지우면 함께 삭제됩니다. 서버에 저장된 정보는 아래 연락처로 요청하시면 지체 없이 삭제합니다.</p>
+<p>서버의 정보는 계정이 있는 동안 보관합니다. 판 조작 기록은 판 진행·확인 동안만 서버 메모리에 두고 판이 끝나면(길어야 몇 시간 안에) 지웁니다. 아래 연락처로 삭제를 요청하시면 계정과 게임 진행 정보를 지체 없이 삭제합니다. 다만 구매 기록은 환불·분쟁 처리와 관계 법령(「전자상거래 등에서의 소비자보호에 관한 법률」의 대금결제·재화 공급 기록 5년 등)이 정한 기간 동안 따로 보관한 뒤 파기합니다. 기기에 저장된 정보는 게임을 지우면 함께 삭제됩니다.</p>
 <h3>5. 보안</h3>
 <p>서버와 주고받는 정보는 암호화된 연결로 전송합니다.</p>
 <h3>6. 아동</h3>
@@ -46,18 +56,27 @@
 
 <section id="en">
 <h2>English</h2>
-<p>factoryjam ("the developer") respects the privacy of everyone who plays the mobile game "FabFab Defense" ("the game"). This policy explains what information the game handles and how.</p>
+<p>FactoryJam (팩토리잼, "the developer") respects the privacy of everyone who plays the mobile game "FabFab Defense" ("the game"). This policy explains what information the game handles and how.</p>
 <h3>1. Information we collect</h3>
+<p>For its online features (co-op matchmaking, saving progress, verifying purchases) the game stores the following on the developer's game server. We do not collect your name, phone number, email address, location, contacts or advertising ID.</p>
 <ul>
-  <li><b>Current version:</b> The game does not collect personal information or send any data off your device. Game progress (currencies, unit levels, settings) is stored only on your device.</li>
-  <li><b>Once online co-op is enabled:</b> To provide matchmaking, the game stores a random account identifier generated on your device, game progress and in-match input records on the developer's game server. We do not collect your name, phone number, email address, location or contacts.</li>
+  <li><b>Account identifier:</b> a random account ID created by the server on first launch, and an access key for this device (the server stores only its hash).</li>
+  <li><b>Sign-in link:</b> if you link an Apple or Google account, we store only the unique account identifier issued by that service. We do not store your email address or name.</li>
+  <li><b>Game progress:</b> currencies, unit and equipment levels, pass and attendance progress, settings, etc.</li>
+  <li><b>Match records:</b> in-match input records of co-op and solo matches and the time you left a match (for matchmaking, verifying rewards and preventing cheating).</li>
+  <li><b>Purchase records:</b> when you make an in-app purchase, the store transaction/order number (derived from the Apple transaction ID or Google purchase token), the product, the time of purchase and your account ID.</li>
 </ul>
+<p>When you play without a server connection, game progress is stored only on your device.</p>
 <h3>2. How we use it</h3>
-<p>Only to provide game features (matchmaking, saving progress, verifying rewards) and to prevent cheating. We never use it for advertising or marketing and never sell it.</p>
-<h3>3. Third parties and SDKs</h3>
-<p>The current version contains no advertising, analytics or payment SDKs and shares no information with third parties. We will update this policy before adding ads or in-app purchases.</p>
+<p>Only to provide game features (matchmaking, saving progress and continuing on other devices, verifying rewards), to prevent cheating, and to use purchase records to <b>deliver purchased items, prevent the same purchase from being granted twice, and handle refunds and purchase support</b>. We never use it for advertising or marketing and never sell it.</p>
+<h3>3. Payments, sign-in and third parties</h3>
+<ul>
+  <li><b>Payments:</b> in-app purchases are processed by the Apple App Store or Google Play. We never receive your card number or other payment details; we verify the proof of purchase sent by the store and deliver the item. Payment data is handled under each store's privacy policy.</li>
+  <li><b>Sign-in:</b> Sign in with Apple and Google Sign-In are handled by those companies; we receive only the account identifier needed to verify the sign-in.</li>
+  <li>The game contains no advertising or analytics SDKs, and we share no information with third parties other than as described above.</li>
+</ul>
 <h3>4. Retention and deletion</h3>
-<p>Data stored on your device is removed when you uninstall the game. Data stored on the server will be deleted promptly on request to the contact below.</p>
+<p>Server data is kept while your account exists. Match input records are kept in server memory only while the match is played and verified, and are removed after the match (within a few hours at most). If you request deletion at the contact below, we will promptly delete your account and game progress. Purchase records, however, are kept separately for the period required for refunds, disputes and applicable law (e.g. 5 years for payment and supply records under the Korean Act on Consumer Protection in Electronic Commerce) and then destroyed. Data stored on your device is removed when you uninstall the game.</p>
 <h3>5. Security</h3>
 <p>Data exchanged with the server is sent over an encrypted connection.</p>
 <h3>6. Children</h3>
@@ -70,18 +89,27 @@
 
 <section id="ja">
 <h2>日本語</h2>
-<p>factoryjam（以下「開発者」）は、モバイルゲーム「ファブファブディフェンス」（以下「本ゲーム」）をご利用の皆さまのプライバシーを大切にします。本ポリシーは、本ゲームが扱う情報とその取り扱いについて説明します。</p>
+<p>ファクトリージャム（팩토리잼、以下「開発者」）は、モバイルゲーム「ファブファブディフェンス」（以下「本ゲーム」）をご利用の皆さまのプライバシーを大切にします。本ポリシーは、本ゲームが扱う情報とその取り扱いについて説明します。</p>
 <h3>1. 収集する情報</h3>
+<p>本ゲームはオンライン機能（協力プレイのマッチング、進行状況の保存、購入の確認）のため、開発者のゲームサーバーに以下の情報を保存します。氏名・電話番号・メールアドレス・位置情報・連絡先・広告IDは収集しません。</p>
 <ul>
-  <li><b>現在のバージョン:</b> 本ゲームは個人情報を収集せず、端末の外にデータを送信しません。ゲームの進行状況（通貨、ユニットレベル、設定など）は端末内にのみ保存されます。</li>
-  <li><b>オンライン協力プレイの開始後:</b> マッチングのため、端末で生成したランダムなアカウント識別子、進行状況、対戦中の操作記録を開発者のゲームサーバーに保存します。氏名・電話番号・メールアドレス・位置情報・連絡先は収集しません。</li>
+  <li><b>アカウント識別子:</b> 初回起動時にサーバーが作成するランダムなアカウントIDと、この端末の接続キー（サーバーにはハッシュ値のみ保存）。</li>
+  <li><b>ログイン連携情報:</b> AppleまたはGoogleのアカウントを連携すると、そのサービスが発行するアカウント固有の識別子のみを保存します。メールアドレス・氏名は保存しません。</li>
+  <li><b>ゲーム進行情報:</b> 通貨、ユニット・設備のレベル、パス・出席の進行状況、設定など。</li>
+  <li><b>対戦記録:</b> 協力・ソロ対戦の操作記録と対戦から退出した時刻（マッチング、報酬の確認、不正行為の防止のため）。</li>
+  <li><b>購入記録:</b> アプリ内購入をされた場合、ストアの取引・注文番号（AppleのトランザクションID、Googleの購入トークンから作成した値）、購入した商品、購入日時、アカウントID。</li>
 </ul>
+<p>サーバーに接続せずに遊ぶ場合、進行状況は端末内にのみ保存されます。</p>
 <h3>2. 利用目的</h3>
-<p>ゲーム機能の提供（マッチング、進行状況の保存、報酬の確認）と不正行為の防止のみに利用します。広告・マーケティングには利用せず、販売もしません。</p>
-<h3>3. 第三者提供とSDK</h3>
-<p>現在のバージョンには広告・分析・決済SDKは含まれておらず、第三者への情報提供も行いません。広告やアプリ内課金を追加する前に本ポリシーを更新します。</p>
+<p>ゲーム機能の提供（マッチング、進行状況の保存・他の端末での引き継ぎ、報酬の確認）、不正行為の防止、そして購入記録による<b>購入アイテムの付与、同じ購入の二重付与の防止、返金・購入に関するお問い合わせへの対応</b>のみに利用します。広告・マーケティングには利用せず、販売もしません。</p>
+<h3>3. 決済・ログインと第三者</h3>
+<ul>
+  <li><b>決済:</b> アプリ内購入はApple App StoreまたはGoogle Playが処理します。開発者はカード番号などの決済情報を受け取らず、ストアから送られた購入の証明を確認してアイテムを付与します。決済情報の取り扱いは各ストアのプライバシーポリシーに従います。</li>
+  <li><b>ログイン:</b> Appleでサインイン・Googleログインは各社が処理し、開発者はログインの確認に必要なアカウント識別子のみを受け取ります。</li>
+  <li>本ゲームには広告・分析SDKは含まれておらず、上記の場合を除き第三者への情報提供は行いません。</li>
+</ul>
 <h3>4. 保存と削除</h3>
-<p>端末内のデータは本ゲームのアンインストール時に削除されます。サーバー上のデータは、下記の連絡先へご依頼いただければ速やかに削除します。</p>
+<p>サーバー上の情報はアカウントが存在する間保存します。対戦の操作記録は対戦の進行・確認の間だけサーバーのメモリに置き、対戦終了後（長くても数時間以内）に削除します。下記の連絡先へ削除をご依頼いただければ、アカウントとゲーム進行情報を速やかに削除します。ただし購入記録は、返金・紛争への対応と関係法令（韓国「電子商取引等における消費者保護に関する法律」による代金決済・供給記録5年など）が定める期間、別途保存した後に破棄します。端末内のデータは本ゲームのアンインストール時に削除されます。</p>
 <h3>5. セキュリティ</h3>
 <p>サーバーとの通信は暗号化された接続で行います。</p>
 <h3>6. 子ども</h3>
@@ -91,5 +119,9 @@
 <h3>8. 変更</h3>
 <p>変更がある場合は、施行日とともに本ページでお知らせします。</p>
 </section>
+
+<p class="biz" id="biz">팩토리잼 (FactoryJam) · 대표자 / Representative / 代表者: 김태우 (Taewoo Kim / キム・テウ) · 사업자등록번호 / Business reg. no. / 事業者登録番号: 777-19-02508 · 통신판매업 신고 / Mail-order business reg. / 通信販売業申告: 제2026-인천연수구-0217호<br>
+주소 / Address / 所在地: 인천광역시 연수구 청학로 24, 상신파크빌 107동 102호 (우 21902) / 102-ho, 107-dong, Sangsin Parkville, 24 Cheonghak-ro, Yeonsu-gu, Incheon 21902, Republic of Korea / 大韓民国 仁川広域市 延寿区 清鶴路24 サンシンパークビル107棟102号 (〒21902)<br>
+<a href="mailto:rlaxodn5235@gmail.com">rlaxodn5235@gmail.com</a> · <a href="../terms/">이용약관 / Terms of Service / 利用規約</a> · <a href="../refund/">환불 정책 / Refund Policy / 返金ポリシー</a></p>
 </body>
 </html>
