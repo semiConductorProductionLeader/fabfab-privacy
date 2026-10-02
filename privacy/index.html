@@ -15,9 +15,9 @@
 </style>
 </head>
 <body>
-<!-- 구현사항 147 §4, 223 §2. 연락처 = Play Console 개발자 연락처 이메일. 사업자 정보는 맨 아래 한 곳(id="biz"). -->
+<!-- 구현사항 147 §4, 223 §2, 264 §10 (AdMob 보상형 광고). 연락처 = Play Console 개발자 연락처 이메일. 사업자 정보는 맨 아래 한 곳(id="biz"). -->
 <h1>FabFab Defense — 개인정보처리방침 / Privacy Policy / プライバシーポリシー</h1>
-<p class="date">시행일 / Effective / 施行日: 2026-09-28</p>
+<p class="date">시행일 / Effective / 施行日: 2026-10-03</p>
 <p><a href="../">← FabFab Defense</a></p>
 <nav><a href="#ko">한국어</a><a href="#en">English</a><a href="#ja">日本語</a></nav>
 
@@ -25,29 +25,35 @@
 <h2>한국어</h2>
 <p>팩토리잼(factoryjam, 이하 "개발자")은 모바일 게임 「팹팹 디펜스」(이하 "게임")를 이용하는 분의 개인정보를 소중히 다룹니다. 이 방침은 게임이 어떤 정보를 어떻게 다루는지 설명합니다.</p>
 <h3>1. 수집하는 정보</h3>
-<p>게임은 온라인 기능(협동 매칭, 진행 저장, 구매 확인)을 위해 개발자의 게임 서버에 다음 정보를 저장합니다. 이름·전화번호·이메일·위치·연락처·광고 ID는 수집하지 않습니다.</p>
+<p>게임은 온라인 기능(협동 매칭, 진행 저장, 구매 확인)과 게임 개선을 위해 다음 정보를 수집합니다. 개발자는 이름·전화번호·이메일·위치·연락처를 수집하지 않으며, 기기 식별자를 직접 만들거나 읽지 않습니다. 보상형 광고를 볼 때 Google이 수집하는 정보는 아래 "보상형 광고" 항목과 §3에 적었습니다.</p>
 <ul>
   <li><b>계정 식별자:</b> 처음 실행할 때 서버가 만든 무작위 계정 id와 이 기기의 접속 키(서버에는 해시 값만 저장).</li>
   <li><b>로그인 연결 정보:</b> Apple 또는 Google 계정을 연결하면, 그 서비스가 발급한 계정 고유 식별자를 저장합니다. Apple 로그인은 계정을 삭제할 때 Apple에 연결 해제를 요청하는 데 쓰는 토큰도 함께 저장합니다. 이메일 주소·이름은 저장하지 않습니다.</li>
   <li><b>게임 진행 정보:</b> 재화, 유닛·설비 레벨, 패스·출석 진행, 설정 등.</li>
   <li><b>판 기록:</b> 협동·혼자 하기 판의 조작 기록과 판 이탈 시각 (매칭, 보상 확인, 부정행위 방지용).</li>
   <li><b>구매 기록:</b> 인앱 구매를 하면 스토어 거래·주문 번호(Apple 거래 id, Google 구매 토큰에서 만든 값), 구매한 상품, 구매 시각, 계정 id.</li>
+  <li><b>플레이 기록:</b> 앱 실행·화면 이동(타이틀·로그인·로비), 튜토리얼 진행 단계, 판 시작(모드)과 매칭 대기 시간·결과, 이용 시간, 앱 버전·OS 종류, 언어. 계정 id와 함께 개발자의 게임 서버에 저장합니다.</li>
+  <li><b>오류 보고:</b> 게임이 비정상 종료되거나 오류가 나면 오류 내용(호출 위치), 앱 버전, 기기 기종·OS 버전, 계정 id를 오류 분석 서비스 Sentry로 보냅니다. 화면 캡처·로그 파일은 보내지 않고, IP 주소는 저장하지 않습니다.</li>
+  <li><b>광고 확인 기록:</b> 보상형 광고를 끝까지 보면 Google AdMob이 개발자의 서버로 보내는 확인 정보 — 계정 id, 광고마다 만든 일회용 번호, 광고 자리, 광고 단위, 거래 번호. 같은 광고로 보상을 두 번 받지 않게 확인하는 데만 씁니다.</li>
+  <li><b>보상형 광고 (Google이 수집):</b> 광고는 이용자가 직접 "광고 보기"를 누를 때만 Google AdMob이 보여 줍니다. 누르자마자 보여 주려고 서버에 연결해 게임을 시작할 때 광고 하나를 미리 불러옵니다. 광고를 불러오고 보여 줄 때 Google이 광고 식별자(Android 광고 ID·앱 세트 ID), IP 주소(대략적 위치), 기기 정보, 광고 조회·클릭 등 상호작용, 진단 정보를 수집합니다. iOS에서는 추적 허용을 요청하지 않으므로 광고 식별자(IDFA)는 쓰이지 않습니다.</li>
 </ul>
-<p>서버에 연결하지 않고 할 때는 게임 진행이 이용자의 기기 안에만 저장됩니다.</p>
+<p>서버에 연결하지 않고 할 때는 게임 진행이 이용자의 기기 안에만 저장되고, 플레이 기록은 모으지 않습니다.</p>
 <h3>2. 이용 목적</h3>
-<p>게임 기능 제공(매칭, 진행 저장·기기 간 이어 하기, 보상 확인), 부정행위 방지, 그리고 구매 기록으로 <b>구매한 아이템 지급, 같은 구매의 중복 지급 방지, 환불·구매 문의 처리</b>에만 씁니다. 광고·마케팅 목적으로 쓰거나 제3자에게 팔지 않습니다.</p>
+<p>게임 기능 제공(매칭, 진행 저장·기기 간 이어 하기, 보상 확인), 부정행위 방지, 플레이 기록·오류 보고로 <b>튜토리얼·난이도·매칭 개선과 오류 수정</b>(이용 통계는 묶어서 봅니다), 그리고 구매 기록으로 <b>구매한 아이템 지급, 같은 구매의 중복 지급 방지, 환불·구매 문의 처리</b>에만 씁니다. 개발자가 모은 정보를 광고·마케팅 목적으로 쓰거나 제3자에게 팔지 않습니다. 보상형 광고에 관한 내용은 §3을 보세요.</p>
 <h3>3. 결제·로그인과 제3자</h3>
 <ul>
   <li><b>결제:</b> 인앱 구매는 Apple App Store 또는 Google Play가 처리합니다. 개발자는 카드 번호 등 결제 수단 정보를 받지 않으며, 스토어가 보낸 구매 증명을 확인해 아이템을 지급합니다. 결제 정보 처리는 각 스토어의 개인정보처리방침을 따릅니다.</li>
   <li><b>로그인:</b> Apple 로그인·Google 로그인은 각 회사가 처리하며, 개발자는 로그인 확인에 필요한 계정 식별자(와 Apple 로그인의 연결 해제용 토큰)만 받습니다. 계정을 삭제하면 Apple에 그 토큰의 폐기를 요청합니다.</li>
-  <li>게임에는 광고·분석 SDK가 들어 있지 않으며, 위의 경우 말고는 정보를 제3자에게 제공하지 않습니다.</li>
+  <li><b>오류 보고 (처리 위탁·국외 이전):</b> 오류 보고는 Functional Software, Inc.(Sentry, 미국)가 처리합니다. 이전 항목: 위 §1 "오류 보고" 항목 / 이전 국가: 미국 / 시기·방법: 오류가 날 때 암호화된 연결로 전송 / 목적: 오류 분석·수정 / 보관: 아래 §4. 거부하려면 게임을 서버에 연결하지 않고 하거나 계정 삭제를 요청할 수 있으나, 이 경우 온라인 기능을 쓸 수 없습니다.</li>
+  <li><b>보상형 광고 (국외 이전):</b> 보상형 광고는 Google LLC(미국)의 Google AdMob이 제공합니다. 이전 항목: 위 §1 "보상형 광고" 항목 / 이전 국가: 미국 / 시기·방법: 광고를 불러오고 볼 때 암호화된 연결로 전송 / 목적: 광고 표시·측정, 부정 클릭 방지 / 보관: Google의 정책에 따름(<a href="https://policies.google.com/technologies/partner-sites">Google이 파트너 앱의 정보를 사용하는 방식</a>). 유럽 경제 지역·영국·스위스에서는 처음 광고를 볼 때 동의를 묻고, 게임의 <b>설정 → 광고 개인정보 설정</b>에서 바꿀 수 있습니다. 광고를 미리 불러오므로 광고를 보지 않아도 위 정보가 Google로 갈 수 있습니다. 서버에 연결하지 않고 하면 광고를 불러오지 않습니다.</li>
+  <li>개발자는 정보를 다른 회사의 데이터와 연결해 추적하지 않습니다. 위의 경우 말고는 정보를 제3자에게 제공하지 않습니다.</li>
 </ul>
 <h3>4. 보관과 삭제</h3>
-<p>서버의 정보는 계정이 있는 동안 보관합니다. 판 조작 기록은 판 진행·확인 동안만 서버 메모리에 두고 판이 끝나면(길어야 몇 시간 안에) 지웁니다. 게임의 <b>설정 → 계정 삭제</b>로 바로 지우거나, 아래 연락처(<a href="../delete/">계정 삭제 안내</a>)로 요청하시면 계정과 게임 진행 정보를 지체 없이 삭제합니다. 다만 구매 기록은 환불·분쟁 처리와 관계 법령(「전자상거래 등에서의 소비자보호에 관한 법률」의 대금결제·재화 공급 기록 5년 등)이 정한 기간 동안 따로 보관한 뒤 파기합니다. 기기에 저장된 정보는 게임을 지우면 함께 삭제됩니다.</p>
+<p>서버의 정보는 계정이 있는 동안 보관합니다. 판 조작 기록은 판 진행·확인 동안만 서버 메모리에 두고 판이 끝나면(길어야 몇 시간 안에) 지웁니다. 플레이 기록은 <b>180일</b>, 광고 확인 기록은 <b>30일</b>이 지나면 자동으로 지우고, 오류 보고는 Sentry에서 <b>90일</b> 보관 후 지웁니다. 게임의 <b>설정 → 계정 삭제</b>로 바로 지우거나, 아래 연락처(<a href="../delete/">계정 삭제 안내</a>)로 요청하시면 계정과 게임 진행 정보·플레이 기록을 지체 없이 삭제합니다. 다만 구매 기록은 환불·분쟁 처리와 관계 법령(「전자상거래 등에서의 소비자보호에 관한 법률」의 대금결제·재화 공급 기록 5년 등)이 정한 기간 동안 따로 보관한 뒤 파기합니다. 기기에 저장된 정보는 게임을 지우면 함께 삭제됩니다.</p>
 <h3>5. 보안</h3>
 <p>서버와 주고받는 정보는 암호화된 연결로 전송합니다.</p>
 <h3>6. 아동</h3>
-<p>게임은 만 13세 미만 아동을 대상으로 하지 않으며, 아동의 개인정보를 알면서 수집하지 않습니다.</p>
+<p>게임은 만 13세 미만 아동을 대상으로 하지 않으며, 아동의 개인정보를 알면서 수집하지 않습니다. 광고는 아동 대상이 아닌 것으로 요청하고, 광고 등급을 PG 이하로 제한합니다.</p>
 <h3>7. 문의</h3>
 <p>개인정보 관련 문의·삭제 요청: <a href="mailto:rlaxodn5235@gmail.com">rlaxodn5235@gmail.com</a></p>
 <h3>8. 변경</h3>
@@ -58,29 +64,35 @@
 <h2>English</h2>
 <p>FactoryJam (팩토리잼, "the developer") respects the privacy of everyone who plays the mobile game "FabFab Defense" ("the game"). This policy explains what information the game handles and how.</p>
 <h3>1. Information we collect</h3>
-<p>For its online features (co-op matchmaking, saving progress, verifying purchases) the game stores the following on the developer's game server. We do not collect your name, phone number, email address, location, contacts or advertising ID.</p>
+<p>For its online features (co-op matchmaking, saving progress, verifying purchases) and to improve the game, the game collects the following. We do not collect your name, phone number, email address, location or contacts, and we do not create or read device identifiers ourselves. What Google collects when you watch a rewarded ad is described under "Rewarded ads" below and in §3.</p>
 <ul>
   <li><b>Account identifier:</b> a random account ID created by the server on first launch, and an access key for this device (the server stores only its hash).</li>
   <li><b>Sign-in link:</b> if you link an Apple or Google account, we store the unique account identifier issued by that service. For Sign in with Apple we also store a token used to ask Apple to remove the link when you delete your account. We do not store your email address or name.</li>
   <li><b>Game progress:</b> currencies, unit and equipment levels, pass and attendance progress, settings, etc.</li>
   <li><b>Match records:</b> in-match input records of co-op and solo matches and the time you left a match (for matchmaking, verifying rewards and preventing cheating).</li>
   <li><b>Purchase records:</b> when you make an in-app purchase, the store transaction/order number (derived from the Apple transaction ID or Google purchase token), the product, the time of purchase and your account ID.</li>
+  <li><b>Play records:</b> app launches and screen changes (title, sign-in, lobby), tutorial steps, match starts (mode), matchmaking wait time and result, play time, app version, OS type and language. These are stored on the developer's game server together with your account ID.</li>
+  <li><b>Error reports:</b> when the game crashes or hits an error, the error details (where in the code), app version, device model, OS version and your account ID are sent to the error-monitoring service Sentry. We do not send screenshots or log files, and IP addresses are not stored.</li>
+  <li><b>Ad verification records:</b> when you finish a rewarded ad, Google AdMob sends a confirmation to the developer's server — your account ID, a one-time number created for each ad, the ad placement, the ad unit and a transaction ID. We use it only to make sure the same ad is not rewarded twice.</li>
+  <li><b>Rewarded ads (collected by Google):</b> ads are shown by Google AdMob only when you choose to tap "Watch ad". So that the ad appears right away, one ad is loaded in advance when you start the game with a server connection. When ads are loaded and shown, Google collects advertising identifiers (Android advertising ID, app set ID), IP address (approximate location), device information, ad interactions such as views and clicks, and diagnostics. On iOS we do not ask for tracking permission, so the advertising identifier (IDFA) is not used.</li>
 </ul>
-<p>When you play without a server connection, game progress is stored only on your device.</p>
+<p>When you play without a server connection, game progress is stored only on your device and no play records are collected.</p>
 <h3>2. How we use it</h3>
-<p>Only to provide game features (matchmaking, saving progress and continuing on other devices, verifying rewards), to prevent cheating, and to use purchase records to <b>deliver purchased items, prevent the same purchase from being granted twice, and handle refunds and purchase support</b>. We never use it for advertising or marketing and never sell it.</p>
+<p>Only to provide game features (matchmaking, saving progress and continuing on other devices, verifying rewards), to prevent cheating, to use play records and error reports to <b>improve the tutorial, difficulty and matchmaking and fix bugs</b> (usage statistics are viewed in aggregate), and to use purchase records to <b>deliver purchased items, prevent the same purchase from being granted twice, and handle refunds and purchase support</b>. We never use the information we collect for advertising or marketing and never sell it. For rewarded ads, see §3.</p>
 <h3>3. Payments, sign-in and third parties</h3>
 <ul>
   <li><b>Payments:</b> in-app purchases are processed by the Apple App Store or Google Play. We never receive your card number or other payment details; we verify the proof of purchase sent by the store and deliver the item. Payment data is handled under each store's privacy policy.</li>
   <li><b>Sign-in:</b> Sign in with Apple and Google Sign-In are handled by those companies; we receive only the account identifier needed to verify the sign-in (and, for Sign in with Apple, the token used to remove the link). When you delete your account we ask Apple to revoke that token.</li>
-  <li>The game contains no advertising or analytics SDKs, and we share no information with third parties other than as described above.</li>
+  <li><b>Error reports (processor, international transfer):</b> error reports are processed by Functional Software, Inc. (Sentry, United States). Data transferred: the "Error reports" item in §1 / Country: United States / When and how: sent over an encrypted connection when an error occurs / Purpose: analysing and fixing errors / Retention: see §4. To refuse, you may play without a server connection or ask us to delete your account, but online features will then be unavailable.</li>
+  <li><b>Rewarded ads (international transfer):</b> rewarded ads are provided by Google AdMob of Google LLC (United States). Data transferred: the "Rewarded ads" item in §1 / Country: United States / When and how: sent over an encrypted connection when an ad is loaded and shown / Purpose: showing and measuring ads, preventing invalid clicks / Retention: under Google's policies (<a href="https://policies.google.com/technologies/partner-sites">How Google uses information from sites or apps that use its services</a>). In the European Economic Area, the UK and Switzerland we ask for consent before the first ad, and you can change it under <b>Settings → Ad privacy settings</b>. Because an ad is loaded in advance, this information may go to Google even if you do not watch an ad. No ads are loaded when you play without a server connection.</li>
+  <li>We do not link information with other companies' data to track you. We share no information with third parties other than as described above.</li>
 </ul>
 <h3>4. Retention and deletion</h3>
-<p>Server data is kept while your account exists. Match input records are kept in server memory only while the match is played and verified, and are removed after the match (within a few hours at most). You can delete your account right away in the game under <b>Settings → Delete account</b>, or request deletion at the contact below (<a href="../delete/">account deletion guide</a>); we will promptly delete your account and game progress. Purchase records, however, are kept separately for the period required for refunds, disputes and applicable law (e.g. 5 years for payment and supply records under the Korean Act on Consumer Protection in Electronic Commerce) and then destroyed. Data stored on your device is removed when you uninstall the game.</p>
+<p>Server data is kept while your account exists. Match input records are kept in server memory only while the match is played and verified, and are removed after the match (within a few hours at most). Play records are deleted automatically after <b>180 days</b> and ad verification records after <b>30 days</b>, and error reports are kept by Sentry for <b>90 days</b> and then deleted. You can delete your account right away in the game under <b>Settings → Delete account</b>, or request deletion at the contact below (<a href="../delete/">account deletion guide</a>); we will promptly delete your account, game progress and play records. Purchase records, however, are kept separately for the period required for refunds, disputes and applicable law (e.g. 5 years for payment and supply records under the Korean Act on Consumer Protection in Electronic Commerce) and then destroyed. Data stored on your device is removed when you uninstall the game.</p>
 <h3>5. Security</h3>
 <p>Data exchanged with the server is sent over an encrypted connection.</p>
 <h3>6. Children</h3>
-<p>The game is not directed at children under 13, and we do not knowingly collect personal information from children.</p>
+<p>The game is not directed at children under 13, and we do not knowingly collect personal information from children. Ads are requested as not directed at children and limited to a PG content rating.</p>
 <h3>7. Contact</h3>
 <p>Privacy questions and deletion requests: <a href="mailto:rlaxodn5235@gmail.com">rlaxodn5235@gmail.com</a></p>
 <h3>8. Changes</h3>
@@ -91,29 +103,35 @@
 <h2>日本語</h2>
 <p>ファクトリージャム（팩토리잼、以下「開発者」）は、モバイルゲーム「ファブファブディフェンス」（以下「本ゲーム」）をご利用の皆さまのプライバシーを大切にします。本ポリシーは、本ゲームが扱う情報とその取り扱いについて説明します。</p>
 <h3>1. 収集する情報</h3>
-<p>本ゲームはオンライン機能（協力プレイのマッチング、進行状況の保存、購入の確認）のため、開発者のゲームサーバーに以下の情報を保存します。氏名・電話番号・メールアドレス・位置情報・連絡先・広告IDは収集しません。</p>
+<p>本ゲームはオンライン機能（協力プレイのマッチング、進行状況の保存、購入の確認）とゲームの改善のため、以下の情報を収集します。開発者は氏名・電話番号・メールアドレス・位置情報・連絡先を収集せず、端末識別子を自ら作成したり読み取ったりしません。リワード広告の視聴時にGoogleが収集する情報は、下記「リワード広告」の項目と§3に記載しています。</p>
 <ul>
   <li><b>アカウント識別子:</b> 初回起動時にサーバーが作成するランダムなアカウントIDと、この端末の接続キー（サーバーにはハッシュ値のみ保存）。</li>
   <li><b>ログイン連携情報:</b> AppleまたはGoogleのアカウントを連携すると、そのサービスが発行するアカウント固有の識別子を保存します。Appleでサインインの場合は、アカウント削除時にAppleへ連携解除を依頼するためのトークンもあわせて保存します。メールアドレス・氏名は保存しません。</li>
   <li><b>ゲーム進行情報:</b> 通貨、ユニット・設備のレベル、パス・出席の進行状況、設定など。</li>
   <li><b>対戦記録:</b> 協力・ソロ対戦の操作記録と対戦から退出した時刻（マッチング、報酬の確認、不正行為の防止のため）。</li>
   <li><b>購入記録:</b> アプリ内購入をされた場合、ストアの取引・注文番号（AppleのトランザクションID、Googleの購入トークンから作成した値）、購入した商品、購入日時、アカウントID。</li>
+  <li><b>プレイ記録:</b> アプリの起動・画面の移動（タイトル・ログイン・ロビー）、チュートリアルの進行段階、対戦の開始（モード）とマッチングの待ち時間・結果、利用時間、アプリのバージョン・OSの種類、言語。アカウントIDとともに開発者のゲームサーバーに保存します。</li>
+  <li><b>エラー報告:</b> 本ゲームが異常終了したりエラーが発生したりした場合、エラーの内容（発生箇所）、アプリのバージョン、端末の機種・OSのバージョン、アカウントIDをエラー分析サービスSentryに送信します。画面のキャプチャ・ログファイルは送信せず、IPアドレスは保存しません。</li>
+  <li><b>広告確認記録:</b> リワード広告を最後まで視聴すると、Google AdMobが開発者のサーバーに送る確認情報 — アカウントID、広告ごとに作成した使い捨ての番号、広告の場所、広告ユニット、取引番号。同じ広告で報酬が二重に付与されないよう確認するためにのみ利用します。</li>
+  <li><b>リワード広告（Googleが収集）:</b> 広告はご自身で「広告を見る」を押したときにのみGoogle AdMobが表示します。すぐに表示できるよう、サーバーに接続してゲームを始めるときに広告を1つ先に読み込みます。広告の読み込み・表示時にGoogleが広告識別子（Androidの広告ID・アプリセットID）、IPアドレス（おおよその位置）、端末情報、広告の表示・クリックなどの操作、診断情報を収集します。iOSではトラッキングの許可を求めないため、広告識別子（IDFA）は使われません。</li>
 </ul>
-<p>サーバーに接続せずに遊ぶ場合、進行状況は端末内にのみ保存されます。</p>
+<p>サーバーに接続せずに遊ぶ場合、進行状況は端末内にのみ保存され、プレイ記録は収集しません。</p>
 <h3>2. 利用目的</h3>
-<p>ゲーム機能の提供（マッチング、進行状況の保存・他の端末での引き継ぎ、報酬の確認）、不正行為の防止、そして購入記録による<b>購入アイテムの付与、同じ購入の二重付与の防止、返金・購入に関するお問い合わせへの対応</b>のみに利用します。広告・マーケティングには利用せず、販売もしません。</p>
+<p>ゲーム機能の提供（マッチング、進行状況の保存・他の端末での引き継ぎ、報酬の確認）、不正行為の防止、プレイ記録・エラー報告による<b>チュートリアル・難易度・マッチングの改善とエラーの修正</b>（利用統計はまとめて確認します）、そして購入記録による<b>購入アイテムの付与、同じ購入の二重付与の防止、返金・購入に関するお問い合わせへの対応</b>のみに利用します。開発者が収集した情報を広告・マーケティングに利用せず、販売もしません。リワード広告については§3をご覧ください。</p>
 <h3>3. 決済・ログインと第三者</h3>
 <ul>
   <li><b>決済:</b> アプリ内購入はApple App StoreまたはGoogle Playが処理します。開発者はカード番号などの決済情報を受け取らず、ストアから送られた購入の証明を確認してアイテムを付与します。決済情報の取り扱いは各ストアのプライバシーポリシーに従います。</li>
   <li><b>ログイン:</b> Appleでサインイン・Googleログインは各社が処理し、開発者はログインの確認に必要なアカウント識別子（とAppleでサインインの連携解除用トークン）のみを受け取ります。アカウントを削除すると、Appleにそのトークンの失効を依頼します。</li>
-  <li>本ゲームには広告・分析SDKは含まれておらず、上記の場合を除き第三者への情報提供は行いません。</li>
+  <li><b>エラー報告（処理の委託・国外移転）:</b> エラー報告はFunctional Software, Inc.（Sentry、米国）が処理します。移転する項目: 上記§1「エラー報告」の項目 / 移転先の国: 米国 / 時期・方法: エラー発生時に暗号化された接続で送信 / 目的: エラーの分析・修正 / 保存期間: 下記§4。拒否する場合は、サーバーに接続せずに遊ぶか、アカウントの削除をご依頼いただけますが、その場合オンライン機能はご利用いただけません。</li>
+  <li><b>リワード広告（国外移転）:</b> リワード広告はGoogle LLC（米国）のGoogle AdMobが提供します。移転する項目: 上記§1「リワード広告」の項目 / 移転先の国: 米国 / 時期・方法: 広告の読み込み・表示時に暗号化された接続で送信 / 目的: 広告の表示・測定、不正クリックの防止 / 保存期間: Googleのポリシーに従います（<a href="https://policies.google.com/technologies/partner-sites">Googleによるパートナーのサイトやアプリからの情報の使用</a>）。欧州経済領域・英国・スイスでは最初の広告の前に同意を確認し、ゲームの<b>設定 → 広告のプライバシー設定</b>で変更できます。広告を先に読み込むため、広告を視聴しなくても上記の情報がGoogleに送られることがあります。サーバーに接続せずに遊ぶ場合、広告は読み込みません。</li>
+  <li>開発者は情報を他社のデータと結び付けてトラッキングしません。上記の場合を除き第三者への情報提供は行いません。</li>
 </ul>
 <h3>4. 保存と削除</h3>
-<p>サーバー上の情報はアカウントが存在する間保存します。対戦の操作記録は対戦の進行・確認の間だけサーバーのメモリに置き、対戦終了後（長くても数時間以内）に削除します。ゲームの<b>設定 → アカウント削除</b>ですぐに削除するか、下記の連絡先（<a href="../delete/">アカウント削除のご案内</a>）へご依頼いただければ、アカウントとゲーム進行情報を速やかに削除します。ただし購入記録は、返金・紛争への対応と関係法令（韓国「電子商取引等における消費者保護に関する法律」による代金決済・供給記録5年など）が定める期間、別途保存した後に破棄します。端末内のデータは本ゲームのアンインストール時に削除されます。</p>
+<p>サーバー上の情報はアカウントが存在する間保存します。対戦の操作記録は対戦の進行・確認の間だけサーバーのメモリに置き、対戦終了後（長くても数時間以内）に削除します。プレイ記録は<b>180日</b>、広告確認記録は<b>30日</b>を過ぎると自動的に削除し、エラー報告はSentryで<b>90日</b>保存した後に削除します。ゲームの<b>設定 → アカウント削除</b>ですぐに削除するか、下記の連絡先（<a href="../delete/">アカウント削除のご案内</a>）へご依頼いただければ、アカウントとゲーム進行情報・プレイ記録を速やかに削除します。ただし購入記録は、返金・紛争への対応と関係法令（韓国「電子商取引等における消費者保護に関する法律」による代金決済・供給記録5年など）が定める期間、別途保存した後に破棄します。端末内のデータは本ゲームのアンインストール時に削除されます。</p>
 <h3>5. セキュリティ</h3>
 <p>サーバーとの通信は暗号化された接続で行います。</p>
 <h3>6. 子ども</h3>
-<p>本ゲームは13歳未満の子どもを対象としておらず、子どもの個人情報を故意に収集することはありません。</p>
+<p>本ゲームは13歳未満の子どもを対象としておらず、子どもの個人情報を故意に収集することはありません。広告は子ども向けではないものとしてリクエストし、広告のレーティングをPG以下に制限します。</p>
 <h3>7. お問い合わせ</h3>
 <p>プライバシーに関するお問い合わせ・削除依頼: <a href="mailto:rlaxodn5235@gmail.com">rlaxodn5235@gmail.com</a></p>
 <h3>8. 変更</h3>
