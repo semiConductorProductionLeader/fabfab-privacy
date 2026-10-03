@@ -29,7 +29,7 @@
 <ul>
   <li><b>계정 식별자:</b> 처음 실행할 때 서버가 만든 무작위 계정 id와 이 기기의 접속 키(서버에는 해시 값만 저장).</li>
   <li><b>로그인 연결 정보:</b> Apple 또는 Google 계정을 연결하면, 그 서비스가 발급한 계정 고유 식별자를 저장합니다. Apple 로그인은 계정을 삭제할 때 Apple에 연결 해제를 요청하는 데 쓰는 토큰도 함께 저장합니다. 이메일 주소·이름은 저장하지 않습니다.</li>
-  <li><b>게임 진행 정보:</b> 재화, 유닛·설비 레벨, 패스·출석 진행, 설정 등.</li>
+  <li><b>게임 진행 정보:</b> 재화, 유닛·설비 레벨, 패스·출석 진행, 설정, 닉네임(정해진 단어 목록에서 무작위로 정해진 표시 이름과 번호로, 함께 플레이하는 상대에게 보입니다. 직접 글을 입력하지 않습니다) 등.</li>
   <li><b>판 기록:</b> 협동·혼자 하기 판의 조작 기록과 판 이탈 시각 (매칭, 보상 확인, 부정행위 방지용).</li>
   <li><b>구매 기록:</b> 인앱 구매를 하면 스토어 거래·주문 번호(Apple 거래 id, Google 구매 토큰에서 만든 값), 구매한 상품, 구매 시각, 계정 id.</li>
   <li><b>플레이 기록:</b> 앱 실행·화면 이동(타이틀·로그인·로비), 튜토리얼 진행 단계, 판 시작(모드)과 매칭 대기 시간·결과, 이용 시간, 앱 버전·OS 종류, 언어. 계정 id와 함께 개발자의 게임 서버에 저장합니다.</li>
@@ -68,7 +68,7 @@
 <ul>
   <li><b>Account identifier:</b> a random account ID created by the server on first launch, and an access key for this device (the server stores only its hash).</li>
   <li><b>Sign-in link:</b> if you link an Apple or Google account, we store the unique account identifier issued by that service. For Sign in with Apple we also store a token used to ask Apple to remove the link when you delete your account. We do not store your email address or name.</li>
-  <li><b>Game progress:</b> currencies, unit and equipment levels, pass and attendance progress, settings, etc.</li>
+  <li><b>Game progress:</b> currencies, unit and equipment levels, pass and attendance progress, settings, your nickname (a display name and number picked at random from a fixed word list, shown to the players you play with; you never type it yourself), etc.</li>
   <li><b>Match records:</b> in-match input records of co-op and solo matches and the time you left a match (for matchmaking, verifying rewards and preventing cheating).</li>
   <li><b>Purchase records:</b> when you make an in-app purchase, the store transaction/order number (derived from the Apple transaction ID or Google purchase token), the product, the time of purchase and your account ID.</li>
   <li><b>Play records:</b> app launches and screen changes (title, sign-in, lobby), tutorial steps, match starts (mode), matchmaking wait time and result, play time, app version, OS type and language. These are stored on the developer's game server together with your account ID.</li>
@@ -107,7 +107,7 @@
 <ul>
   <li><b>アカウント識別子:</b> 初回起動時にサーバーが作成するランダムなアカウントIDと、この端末の接続キー（サーバーにはハッシュ値のみ保存）。</li>
   <li><b>ログイン連携情報:</b> AppleまたはGoogleのアカウントを連携すると、そのサービスが発行するアカウント固有の識別子を保存します。Appleでサインインの場合は、アカウント削除時にAppleへ連携解除を依頼するためのトークンもあわせて保存します。メールアドレス・氏名は保存しません。</li>
-  <li><b>ゲーム進行情報:</b> 通貨、ユニット・設備のレベル、パス・出席の進行状況、設定など。</li>
+  <li><b>ゲーム進行情報:</b> 通貨、ユニット・設備のレベル、パス・出席の進行状況、設定、ニックネーム（決められた単語リストからランダムに決まる表示名と番号で、一緒にプレイする相手に表示されます。文字を直接入力することはありません）など。</li>
   <li><b>対戦記録:</b> 協力・ソロ対戦の操作記録と対戦から退出した時刻（マッチング、報酬の確認、不正行為の防止のため）。</li>
   <li><b>購入記録:</b> アプリ内購入をされた場合、ストアの取引・注文番号（AppleのトランザクションID、Googleの購入トークンから作成した値）、購入した商品、購入日時、アカウントID。</li>
   <li><b>プレイ記録:</b> アプリの起動・画面の移動（タイトル・ログイン・ロビー）、チュートリアルの進行段階、対戦の開始（モード）とマッチングの待ち時間・結果、利用時間、アプリのバージョン・OSの種類、言語。アカウントIDとともに開発者のゲームサーバーに保存します。</li>
