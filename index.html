@@ -3,127 +3,62 @@
 <head>
 <meta charset="utf-8">
 <meta name="viewport" content="width=device-width, initial-scale=1">
-<title>FabFab Defense</title>
-<meta name="description" content="FabFab Defense — real-time co-op tower defense with ore buddies. 팹팹 디펜스 — 둘이 함께 막는 실시간 협동 디펜스.">
-<meta property="og:title" content="FabFab Defense">
-<meta property="og:image" content="img/feature_en.png">
+<title>팹팹 디펜스 — 둘이 함께 막는 실시간 협동 디펜스</title>
+<meta name="description" content="광석 친구들과 반도체를 키워라! 2인 실시간 협동 타워 디펜스. 유닛 34종, 50웨이브, 무료.">
+<link rel="canonical" href="https://factoryjamgames.com/">
+<link rel="alternate" hreflang="ko" href="https://factoryjamgames.com/">
+<link rel="alternate" hreflang="en" href="https://factoryjamgames.com/en/">
+<link rel="alternate" hreflang="ja" href="https://factoryjamgames.com/ja/">
+<link rel="alternate" hreflang="x-default" href="https://factoryjamgames.com/">
+<meta property="og:title" content="팹팹 디펜스 — 둘이 함께 막는 실시간 협동 디펜스">
+<meta property="og:description" content="광석 친구들과 반도체를 키워라! 2인 실시간 협동 타워 디펜스. 유닛 34종, 50웨이브, 무료.">
+<meta property="og:image" content="https://factoryjamgames.com/img/feature_ko.png">
 <link rel="icon" href="img/icon_512.png">
-<!-- 구현사항 147 §4. tools/publish_site.sh가 img/와 privacy/를 붙여 올린다 -->
-<style>
-  :root { --sky: #8fd3ff; --sky2: #d9f1ff; --ink: #1c2238; --card: #ffffff; --accent: #f28c28; --green: #7ccf2a; --muted: #5b6480; }
-  * { box-sizing: border-box; }
-  html { background: #fff8e6; }
-  body { margin: 0; font-family: -apple-system, "Segoe UI", "Noto Sans KR", "Noto Sans JP", sans-serif; color: var(--ink); background: linear-gradient(var(--sky), var(--sky2) 520px, #fff8e6); line-height: 1.6; min-height: 100vh; }
-  .wrap { max-width: 960px; margin: 0 auto; padding: 0 16px; }
-  header { display: flex; align-items: center; justify-content: space-between; padding: 14px 0; }
-  .brand { display: flex; align-items: center; gap: 10px; font-weight: 800; }
-  .brand img { width: 36px; height: 36px; border-radius: 8px; image-rendering: pixelated; }
-  .langs button { border: 2px solid var(--ink); background: #fff; color: var(--ink); border-radius: 999px; padding: 3px 10px; margin-left: 4px; font-weight: 700; cursor: pointer; }
-  .langs button[aria-pressed="true"] { background: var(--ink); color: #fff; }
-  .hero img { width: 100%; height: auto; display: block; border: 4px solid var(--ink); border-radius: 14px; image-rendering: pixelated; box-shadow: 0 8px 0 rgba(28,34,56,.25); }
-  h1 { font-size: clamp(1.6rem, 5vw, 2.4rem); margin: 28px 0 6px; }
-  .tagline { font-size: 1.1rem; color: var(--muted); margin: 0 0 18px; }
-  .badge { display: inline-block; background: var(--green); color: var(--ink); border: 3px solid var(--ink); border-radius: 12px; padding: 10px 18px; font-weight: 800; box-shadow: 0 4px 0 var(--ink); }
-  .policy { background: #fff; color: var(--ink); text-decoration: none; margin: 8px 0 0 8px; }
-  .biz { font-size: 12px; opacity: .75; line-height: 1.6; }
-  .features { display: grid; grid-template-columns: repeat(auto-fit, minmax(240px, 1fr)); gap: 14px; margin: 32px 0; }
-  .feature { background: var(--card); border: 3px solid var(--ink); border-radius: 14px; padding: 16px; }
-  .feature h3 { margin: 0 0 6px; font-size: 1.05rem; }
-  .feature p { margin: 0; color: var(--muted); }
-  .shots { display: flex; gap: 12px; overflow-x: auto; padding: 4px 2px 16px; scroll-snap-type: x mandatory; }
-  .shots img { flex: 0 0 auto; width: 200px; height: auto; border: 3px solid var(--ink); border-radius: 12px; scroll-snap-align: start; }
-  footer { margin-top: 40px; padding: 24px 0 40px; border-top: 2px solid rgba(28,34,56,.15); color: var(--muted); font-size: .95rem; }
-  footer a { color: var(--ink); font-weight: 700; }
-  /* 고른 언어만 보인다 (각 요소의 원래 display는 그대로) */
-  html:not([lang="ko"]) [data-l="ko"], html:not([lang="en"]) [data-l="en"], html:not([lang="ja"]) [data-l="ja"] { display: none !important; }
-</style>
+<link rel="stylesheet" href="site.css">
+<!-- tools/site_gen.py가 만든다 (구현사항 319). 손으로 고치지 말고 생성기·store/site/를 고친다 -->
 </head>
 <body>
 <div class="wrap">
   <header>
-    <div class="brand"><img src="img/icon_512.png" alt=""><span>FabFab Defense</span></div>
-    <nav class="langs" aria-label="Language">
-      <button data-set="ko">한국어</button><button data-set="en">EN</button><button data-set="ja">日本語</button>
-    </nav>
+    <a class="brand" href="./"><img src="img/icon_512.png" alt=""><span>FabFab Defense</span></a>
+    <nav class="langs" aria-label="Language"><a href="./" aria-current="true" hreflang="ko">한국어</a><a href="en/" hreflang="en">EN</a><a href="ja/" hreflang="ja">日本語</a></nav>
+    <nav class="menu"><a href="./" aria-current="page">게임 소개</a><a href="updates/">업데이트 소식</a><a href="units/">도감</a><a href="coupon/">쿠폰 등록</a><a href="about/">개발사</a></nav>
   </header>
-
-  <section class="hero">
-    <img data-l="ko" src="img/feature_ko.png" alt="팹팹 디펜스">
-    <img data-l="en" src="img/feature_en.png" alt="FabFab Defense">
-    <img data-l="ja" src="img/feature_ja.png" alt="ファブファブディフェンス">
-  </section>
-
-  <h1 data-l="ko">팹팹 디펜스</h1>
-  <h1 data-l="en">FabFab Defense</h1>
-  <h1 data-l="ja">ファブファブディフェンス</h1>
-  <p class="tagline" data-l="ko">광석 친구들과 반도체를 키워라! 둘이 함께 막는 실시간 협동 디펜스</p>
-  <p class="tagline" data-l="en">Grow chips with ore buddies! Real-time co-op tower defense for two.</p>
-  <p class="tagline" data-l="ja">鉱石の仲間と半導体を育てよう！ふたりで守るリアルタイム協力ディフェンス</p>
-  <span class="badge" data-l="ko">Google Play 비공개 테스트 중</span>
-  <span class="badge" data-l="en">Now in closed testing on Google Play</span>
-  <span class="badge" data-l="ja">Google Play クローズドテスト中</span>
-  <a class="badge policy" href="privacy/"><span data-l="ko">개인정보처리방침</span><span data-l="en">Privacy Policy</span><span data-l="ja">プライバシーポリシー</span></a>
-  <a class="badge policy" href="terms/"><span data-l="ko">이용약관</span><span data-l="en">Terms of Service</span><span data-l="ja">利用規約</span></a>
-  <a class="badge policy" href="refund/"><span data-l="ko">환불 정책</span><span data-l="en">Refund Policy</span><span data-l="ja">返金ポリシー</span></a>
-  <a class="badge policy" href="delete/"><span data-l="ko">계정 삭제</span><span data-l="en">Delete Account</span><span data-l="ja">アカウント削除</span></a>
-  <a class="badge policy" href="coupon/"><span data-l="ko">쿠폰</span><span data-l="en">Coupon</span><span data-l="ja">クーポン</span></a>
-
+  <section class="hero"><img src="img/feature_ko.png" alt="팹팹 디펜스"></section>
+  <h1>팹팹 디펜스</h1>
+  <p class="tagline">광석 친구들과 반도체를 키워라! 둘이 함께 막는 실시간 협동 디펜스</p>
+  <div class="stores">
+    <a class="store" href="https://play.google.com/store/apps/details?id=com.factoryjam.fabfabdefense" rel="noopener">▶ Google Play</a>
+    <span class="store disabled"> App Store · 심사 중</span>
+    <span class="store-hint">정식 출시 · 무료 다운로드</span>
+  </div>
   <div class="features">
-    <div class="feature">
-      <h3 data-l="ko">둘이 함께 막는 실시간 협동</h3><h3 data-l="en">Real-time co-op for two</h3><h3 data-l="ja">ふたりで守るリアルタイム協力</h3>
-      <p data-l="ko">8자 맵을 나눠 지키고, 가운데 공유 길목에서 서로를 도와요. 처치 보상은 두 사람 모두!</p>
-      <p data-l="en">Split a figure-8 map, help each other in the shared lane — both players get every kill reward.</p>
-      <p data-l="ja">8の字マップを分担して守り、真ん中の共有ルートで助け合おう。撃破報酬はふたりとも獲得！</p>
-    </div>
-    <div class="feature">
-      <h3 data-l="ko">슬롯으로 뽑고, 레시피로 키우고</h3><h3 data-l="en">Spin, combine, grow</h3><h3 data-l="ja">スロットで引いて、レシピで育てる</h3>
-      <p data-l="ko">구리·실리콘·금을 모아 트랜지스터 → CPU → 게이밍 PC까지. 유닛 30종, 다섯 등급.</p>
-      <p data-l="en">Combine Copper, Silicon and Gold into a Transistor → CPU → Gaming PC. 30 units, five grades.</p>
-      <p data-l="ja">銅・シリコン・金を合成してトランジスタ → CPU → ゲーミングPCへ。ユニット30種、5段階。</p>
-    </div>
-    <div class="feature">
-      <h3 data-l="ko">30웨이브, 보스를 쓰러뜨려라</h3><h3 data-l="en">30 waves, epic bosses</h3><h3 data-l="ja">全30ウェーブ、ボスを倒せ</h3>
-      <p data-l="ko">10·20·30웨이브 보스를 제한 시간 안에! 한 판 12~15분, 한 손 세로 화면.</p>
-      <p data-l="en">Beat the bosses on waves 10, 20 and 30 in time. 12–15 minute runs, one-handed portrait play.</p>
-      <p data-l="ja">10・20・30ウェーブのボスを制限時間内に。1プレイ12〜15分、片手で遊べる縦画面。</p>
-    </div>
+    <div class="feature"><h3>둘이 함께 막는 실시간 협동</h3><p>8자 맵을 나눠 지키고, 가운데 공유 길목에서 서로를 도와요. 처치 보상은 두 사람 모두!</p></div>
+    <div class="feature"><h3>슬롯으로 뽑고, 레시피로 키우고</h3><p>구리·실리콘·금을 모아 트랜지스터 → CPU → 게이밍 PC까지. 유닛 34종, 조합 22가지, 다섯 등급.</p></div>
+    <div class="feature"><h3>50웨이브, 보스를 쓰러뜨려라</h3><p>10·20·30·40·50웨이브 보스를 제한 시간 안에! 한 판 12~15분, 한 손 세로 화면.</p></div>
+    <div class="feature"><h3>키우는 재미</h3><p>유닛을 강화하면 8레벨에 새 스킬이 열리고, 전설 유닛은 16레벨에 각성 스킬까지!</p></div>
   </div>
-
-  <div class="shots" data-l="ko">
-    <img src="img/screens/ko/01_title.png" alt=""><img src="img/screens/ko/02_coop.png" alt=""><img src="img/screens/ko/03_match.png" alt=""><img src="img/screens/ko/04_unit.png" alt=""><img src="img/screens/ko/05_shop.png" alt="">
+  <div class="shots">
+    <img src="img/screens/ko/01_title.png" alt="팹팹 디펜스 1" loading="lazy">
+    <img src="img/screens/ko/02_coop.png" alt="팹팹 디펜스 2" loading="lazy">
+    <img src="img/screens/ko/03_match.png" alt="팹팹 디펜스 3" loading="lazy">
+    <img src="img/screens/ko/04_unit.png" alt="팹팹 디펜스 4" loading="lazy">
+    <img src="img/screens/ko/05_shop.png" alt="팹팹 디펜스 5" loading="lazy">
   </div>
-  <div class="shots" data-l="en">
-    <img src="img/screens/en/01_title.png" alt=""><img src="img/screens/en/02_coop.png" alt=""><img src="img/screens/en/03_match.png" alt=""><img src="img/screens/en/04_unit.png" alt=""><img src="img/screens/en/05_shop.png" alt="">
+  <div class="more">
+    <a href="units/"><strong>도감 보기 →</strong><span>유닛 34종의 스킬과 조합식</span></a>
+    <a href="updates/"><strong>업데이트 소식 →</strong><span>게임 안 패치노트와 같은 내용</span></a>
   </div>
-  <div class="shots" data-l="ja">
-    <img src="img/screens/ja/01_title.png" alt=""><img src="img/screens/ja/02_coop.png" alt=""><img src="img/screens/ja/03_match.png" alt=""><img src="img/screens/ja/04_unit.png" alt=""><img src="img/screens/ja/05_shop.png" alt="">
-  </div>
-
   <footer>
     <p>© 2026 factoryjam ·
-      <a href="privacy/"><span data-l="ko">개인정보처리방침</span><span data-l="en">Privacy Policy</span><span data-l="ja">プライバシーポリシー</span></a> ·
-      <a href="terms/"><span data-l="ko">이용약관</span><span data-l="en">Terms of Service</span><span data-l="ja">利用規約</span></a> ·
-      <a href="refund/"><span data-l="ko">환불 정책</span><span data-l="en">Refund Policy</span><span data-l="ja">返金ポリシー</span></a> ·
-      <a href="delete/"><span data-l="ko">계정 삭제</span><span data-l="en">Delete Account</span><span data-l="ja">アカウント削除</span></a> ·
-      <a href="coupon/"><span data-l="ko">쿠폰</span><span data-l="en">Coupon</span><span data-l="ja">クーポン</span></a> ·
+      <a href="privacy/">개인정보처리방침</a> ·
+      <a href="terms/">이용약관</a> ·
+      <a href="refund/">환불 정책</a> ·
+      <a href="delete/">계정 삭제</a> ·
+      <a href="coupon/">쿠폰</a> ·
       <a href="mailto:rlaxodn5235@gmail.com">rlaxodn5235@gmail.com</a></p>
     <p class="biz">팩토리잼 · 대표자 김태우 · 사업자등록번호 777-19-02508 · 통신판매업 신고 제2026-인천연수구-0217호<br>인천광역시 연수구 청학로 24 (우 21902)</p>
   </footer>
 </div>
-<script>
-  (function () {
-    var langs = ["ko", "en", "ja"];
-    function set(l) {
-      document.documentElement.lang = l;
-      document.querySelectorAll(".langs button").forEach(function (b) { b.setAttribute("aria-pressed", b.dataset.set === l ? "true" : "false"); });
-      try { localStorage.setItem("lang", l); } catch (e) {}
-    }
-    var saved = null;
-    try { saved = localStorage.getItem("lang"); } catch (e) {}
-    var guess = (navigator.language || "en").slice(0, 2);
-    set(langs.indexOf(saved) >= 0 ? saved : (langs.indexOf(guess) >= 0 ? guess : "en"));
-    document.querySelectorAll(".langs button").forEach(function (b) { b.addEventListener("click", function () { set(b.dataset.set); }); });
-  })();
-</script>
 </body>
 </html>
