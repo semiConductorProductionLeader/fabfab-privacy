@@ -79,7 +79,7 @@
 </section>
 
 <p class="biz" id="biz">팩토리잼 (FactoryJam) · 대표자 / Representative / 代表者: 김태우 (Taewoo Kim / キム・テウ) · 사업자등록번호 / Business reg. no. / 事業者登録番号: 777-19-02508 · 통신판매업 신고 / Mail-order business reg. / 通信販売業申告: 제2026-인천연수구-0217호<br>
-주소 / Address / 所在地: 인천광역시 연수구 청학로 24, 상신파크빌 107동 102호 (우 21902) / 102-ho, 107-dong, Sangsin Parkville, 24 Cheonghak-ro, Yeonsu-gu, Incheon 21902, Republic of Korea / 大韓民国 仁川広域市 延寿区 清鶴路24 サンシンパークビル107棟102号 (〒21902)<br>
+주소 / Address / 所在地: 인천광역시 연수구 청학로 24 (우 21902) / 24 Cheonghak-ro, Yeonsu-gu, Incheon 21902, Republic of Korea / 大韓民国 仁川広域市 延寿区 清鶴路24 (〒21902)<br>
 <a href="mailto:rlaxodn5235@gmail.com">rlaxodn5235@gmail.com</a> · <a href="../privacy/">개인정보처리방침 / Privacy Policy / プライバシーポリシー</a> · <a href="../terms/">이용약관 / Terms of Service / 利用規約</a> · <a href="../refund/">환불 정책 / Refund Policy / 返金ポリシー</a></p>
 
 <script>
@@ -90,19 +90,19 @@
   var given = new URLSearchParams(location.search).get("api");
   if (given && /^http:\/\/(127\.0\.0\.1|localhost):\d{2,5}$/.test(given)) API = given;
 
-  // 결과 글 (280 §5-2 표 + NO_ACCOUNT, 웹 성공 글)
+  // 결과 글 (280 §5-2 표 + NO_ACCOUNT(형식만 — 서버는 없는 계정도 NOT_FOUND, 287 §4), 웹 성공 글)
   var T = {
-    ko: { OK: "보상을 게임 메시지 함으로 보냈어요. 30일 안에 받아 주세요.", NOT_FOUND: "없는 쿠폰 코드예요.",
+    ko: { OK: "보상을 게임 메시지 함으로 보냈어요. 30일 안에 받아 주세요.", NOT_FOUND: "쿠폰 코드나 계정 ID를 찾을 수 없어요. 둘 다 확인해 주세요.",
       EXPIRED: "지금은 쓸 수 없는 쿠폰이에요.", USED: "이미 쓴 쿠폰이에요.", LIMIT: "쿠폰이 모두 소진됐어요.",
       TOO_MANY: "시도가 너무 많아요. 잠시 뒤 다시 해 주세요.",
       NO_ACCOUNT: "계정 ID를 찾을 수 없어요. 설정 화면의 계정 ID를 확인해 주세요.",
       EMPTY: "계정 ID와 쿠폰 코드를 넣어 주세요.", FAIL: "쿠폰을 쓰지 못했어요. 잠시 뒤 다시 해 주세요.", WAIT: "보내는 중…" },
-    en: { OK: "Reward sent to your in-game mailbox. Claim it within 30 days.", NOT_FOUND: "That coupon code doesn't exist.",
+    en: { OK: "Reward sent to your in-game mailbox. Claim it within 30 days.", NOT_FOUND: "Coupon code or Account ID not found. Please check both.",
       EXPIRED: "This coupon can't be used right now.", USED: "You've already used this coupon.",
       LIMIT: "This coupon has run out.", TOO_MANY: "Too many attempts. Please try again later.",
       NO_ACCOUNT: "Account ID not found. Check the Account ID in Settings.",
       EMPTY: "Enter your Account ID and a coupon code.", FAIL: "Couldn't use the coupon. Please try again later.", WAIT: "Sending…" },
-    ja: { OK: "報酬をゲームのメッセージボックスに送りました。30日以内に受け取ってください。", NOT_FOUND: "存在しないクーポンコードです。",
+    ja: { OK: "報酬をゲームのメッセージボックスに送りました。30日以内に受け取ってください。", NOT_FOUND: "クーポンコードまたはアカウントIDが見つかりません。両方をご確認ください。",
       EXPIRED: "このクーポンは現在使えません。", USED: "すでに使用したクーポンです。",
       LIMIT: "このクーポンはすべて使用されました。", TOO_MANY: "試行回数が多すぎます。しばらくしてからもう一度お試しください。",
       NO_ACCOUNT: "アカウントIDが見つかりません。設定画面のアカウントIDをご確認ください。",
