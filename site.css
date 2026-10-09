@@ -107,3 +107,16 @@ html.js .details > .unit:target { display: none; }
 footer { margin-top: 40px; padding: 24px 0 40px; border-top: 2px solid rgba(28,34,56,.15); color: var(--muted); font-size: .95rem; }
 footer a { color: var(--ink); font-weight: 700; }
 .biz { font-size: 12px; opacity: .75; line-height: 1.6; }
+
+/* 프레스킷 (319 바뀜 2) */
+.press .store { margin: 4px 0 8px; }
+.facts { display: grid; grid-template-columns: max-content 1fr; gap: 6px 16px; background: var(--card); border: 3px solid var(--ink); border-radius: 14px; padding: 14px 18px; margin: 0; }
+.facts dt { font-weight: 800; }
+.facts dd { margin: 0; overflow-wrap: anywhere; }
+@media (max-width: 520px) { .facts { grid-template-columns: 1fr; gap: 0; } .facts dd { margin: 0 0 8px; } }
+.press-imgs { display: grid; grid-template-columns: repeat(auto-fit, minmax(200px, 1fr)); gap: 12px; margin: 0 0 14px; }
+.press-imgs a { display: flex; flex-direction: column; align-items: center; gap: 6px; text-decoration: none; font-weight: 700; background: var(--card); border: 3px solid var(--ink); border-radius: 14px; padding: 12px; }
+.press-imgs img { height: 120px; width: auto; max-width: 100%; object-fit: contain; image-rendering: pixelated; }
+.press .shots a { flex: 0 0 auto; display: block; }
+.press .shots a img { width: 200px; }
+@media (min-width: 900px) { .press .shots a { flex: 1 1 0; min-width: 0; } .press .shots a img { width: 100%; } }
