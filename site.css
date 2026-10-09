@@ -39,6 +39,7 @@ h2 { font-size: 1.35rem; margin: 32px 0 10px; }
 .feature p { margin: 0; color: var(--muted); }
 .shots { display: flex; gap: 12px; overflow-x: auto; padding: 4px 2px 16px; scroll-snap-type: x mandatory; }
 .shots img { flex: 0 0 auto; width: 200px; height: auto; border: 3px solid var(--ink); border-radius: 12px; scroll-snap-align: start; box-shadow: 0 4px 0 rgba(28,34,56,.25); }
+@media (min-width: 900px) { .shots { overflow: visible; } .shots img { flex: 1 1 0; min-width: 0; width: auto; } }  /* 넓은 화면은 다섯 장이 한 줄에 다 보이게 */
 .more { display: grid; grid-template-columns: repeat(auto-fit, minmax(240px, 1fr)); gap: 14px; margin: 8px 0 24px; }
 .more a { display: block; text-decoration: none; background: var(--card); border: 3px solid var(--ink); border-radius: 14px; padding: 16px; box-shadow: 0 4px 0 var(--ink); }
 .more a strong { display: block; font-size: 1.1rem; }
