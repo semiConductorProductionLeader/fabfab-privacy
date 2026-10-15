@@ -120,3 +120,25 @@ footer a { color: var(--ink); font-weight: 700; }
 .press .shots a { flex: 0 0 auto; display: block; }
 .press .shots a img { width: 200px; }
 @media (min-width: 900px) { .press .shots a { flex: 1 1 0; min-width: 0; } .press .shots a img { width: 100%; } }
+
+/* 확률 정보 (325): 게임 확률 창처럼 줄마다 등급 색 띠, 오른쪽 확률 알약 (확정은 초록) */
+.basis { display: inline-block; font-weight: 800; background: var(--card); border: 2px solid var(--ink); border-radius: 999px; padding: 2px 12px; margin: 0 0 8px; }
+.odds-box { margin: 0 0 22px; }
+.odds-box .lead { margin: 0 0 8px; }
+.odds { width: 100%; border-collapse: separate; border-spacing: 0 6px; }
+.odds th { text-align: left; color: var(--muted); font-size: .85rem; padding: 0 12px; }
+.odds th:last-child, .odds td:last-child { text-align: right; }
+.odds td { background: var(--card); border-top: 2px solid var(--ink); border-bottom: 2px solid var(--ink); padding: 8px 12px; font-weight: 700; }
+.odds td:first-child { border-left: 10px solid var(--gc); border-radius: 12px 0 0 12px; }
+.odds td:last-child { border-right: 2px solid var(--ink); border-radius: 0 12px 12px 0; white-space: nowrap; }
+.odds .pill { display: inline-block; min-width: 76px; text-align: center; color: #fff; background: #3d5a8a; border: 2px solid var(--ink); border-radius: 999px; padding: 1px 10px; font-weight: 800; font-variant-numeric: tabular-nums; }
+.odds .pill.sure { background: #2e7d32; }
+.odds.cards td:nth-child(2), .odds.cards th:nth-child(2) { text-align: center; }
+.odds.cards td:nth-child(3), .odds.cards th:nth-child(3) { text-align: center; }
+.odds.cards td:last-child { text-align: left; white-space: normal; font-weight: 600; font-size: .92rem; }
+.odds.cards th:last-child { text-align: left; }
+.odds.cards th, .odds.cards td:nth-child(-n+3) { white-space: nowrap; }
+@media (max-width: 520px) { .odds.cards td, .odds.cards th { padding-left: 6px; padding-right: 6px; } .odds.cards td:last-child { font-size: .85rem; } }
+.free-head { margin-top: 36px; }
+.odds-notes { color: var(--muted); padding-left: 20px; }
+@media (max-width: 520px) { .odds td { padding: 7px 8px; font-size: .92rem; } .odds .pill { min-width: 64px; padding: 1px 6px; } }
