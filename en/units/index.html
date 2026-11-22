@@ -4,14 +4,14 @@
 <meta charset="utf-8">
 <meta name="viewport" content="width=device-width, initial-scale=1">
 <title>Units — FabFab Defense</title>
-<meta name="description" content="FabFab Defense unit encyclopedia — grade, attack type, skills and recipes for all 34 units.">
+<meta name="description" content="FabFab Defense unit encyclopedia — grade, attack type, skills and recipes for all 35 units.">
 <link rel="canonical" href="https://factoryjamgames.com/en/units/">
 <link rel="alternate" hreflang="ko" href="https://factoryjamgames.com/units/">
 <link rel="alternate" hreflang="en" href="https://factoryjamgames.com/en/units/">
 <link rel="alternate" hreflang="ja" href="https://factoryjamgames.com/ja/units/">
 <link rel="alternate" hreflang="x-default" href="https://factoryjamgames.com/units/">
 <meta property="og:title" content="Units — FabFab Defense">
-<meta property="og:description" content="FabFab Defense unit encyclopedia — grade, attack type, skills and recipes for all 34 units.">
+<meta property="og:description" content="FabFab Defense unit encyclopedia — grade, attack type, skills and recipes for all 35 units.">
 <meta property="og:image" content="https://factoryjamgames.com/img/feature_en.png">
 <link rel="icon" href="../../img/icon_512.png">
 <link rel="stylesheet" href="../../site.css">
@@ -30,13 +30,13 @@
     <span class="store-hint">Out now · Free to play</span>
   </div>
   <h1>Units</h1>
-  <p class="lead">34 units · 22 recipes. Numbers are base values before upgrades.</p>
+  <p class="lead">35 units · 23 recipes. Numbers are base values before upgrades.</p>
   <nav class="grades">
     <a href="#grade-0">Common 6</a>
     <a href="#grade-1">Uncommon 6</a>
     <a href="#grade-2">Rare 6</a>
     <a href="#grade-3">Unique 8</a>
-    <a href="#grade-4">Legendary 8</a>
+    <a href="#grade-4">Legendary 9</a>
   </nav>
   <h2 class="grade-head g0" id="grade-0">Common<small>6</small></h2>
   <div class="tiles">
@@ -76,7 +76,7 @@
     <a class="tile g3" href="#unit-npu"><img src="../../img/units/npu.png" alt="" loading="lazy"><span>NPU</span><small>Single</small></a>
     <a class="tile g3" href="#unit-battery"><img src="../../img/units/battery.png" alt="" loading="lazy"><span>Battery</span><small>Area</small></a>
   </div>
-  <h2 class="grade-head g4" id="grade-4">Legendary<small>8</small></h2>
+  <h2 class="grade-head g4" id="grade-4">Legendary<small>9</small></h2>
   <div class="tiles">
     <a class="tile g4" href="#unit-gaming_pc"><img src="../../img/units/gaming_pc.png" alt="" loading="lazy"><span>Gaming PC</span><small>Area</small></a>
     <a class="tile g4" href="#unit-server"><img src="../../img/units/server.png" alt="" loading="lazy"><span>Server</span><small>Single</small></a>
@@ -86,6 +86,7 @@
     <a class="tile g4" href="#unit-cooling_sys"><img src="../../img/units/cooling_sys.png" alt="" loading="lazy"><span>Liquid Cooler</span><small>Support</small></a>
     <a class="tile g4" href="#unit-game_console"><img src="../../img/units/game_console.png" alt="" loading="lazy"><span>Game Console</span><small>Single</small></a>
     <a class="tile g4" href="#unit-satellite"><img src="../../img/units/satellite.png" alt="" loading="lazy"><span>Satellite</span><small>Area</small></a>
+    <a class="tile g4" href="#unit-electric_car"><img src="../../img/units/electric_car.png" alt="" loading="lazy"><span>Electric Car</span><small>Area</small></a>
   </div>
   <div class="details">
     <article class="unit g0" id="unit-silicon">
@@ -701,6 +702,27 @@
       </ul>
       <h4>How to make</h4>
       <p class="recipe"><a href="#unit-battery"><img src="../../img/units/battery.png" alt="">Battery</a> <span class="plus">+</span> <a href="#unit-npu"><img src="../../img/units/npu.png" alt="">NPU</a> <span class="plus">+</span> <a href="#unit-cpu"><img src="../../img/units/cpu.png" alt="">CPU</a> <span class="plus">+</span> <a href="#unit-mainboard"><img src="../../img/units/mainboard.png" alt="">Mainboard</a></p>
+    </article>
+    <article class="unit g4" id="unit-electric_car">
+      <div class="unit-head"><img src="../../img/units/electric_car.png" alt="Electric Car" loading="lazy"><div>
+        <h3>Electric Car</h3>
+        <span class="tag g4">Legendary</span><span class="tag">Area</span>
+      </div></div>
+      <ul class="stats">
+        <li><span>Damage</span><b>200</b></li>
+        <li><span>Range</span><b>2.5 tiles</b></li>
+        <li><span>Attack interval</span><b>1s</b></li>
+      </ul>
+      <h4>Skills</h4>
+      <ul class="skills">
+        <li><b>Mini Car Rush</b><span class="when">Every 4 attacks</span><span class="desc">A mini car drives against traffic: 60% damage to up to 5 enemies and pushes them back 0.8 tiles (not bosses)</span></li>
+        <li><b>Quick Start</b><span class="when">15% on hit</span><span class="desc">A mini car drives against traffic: 40% damage to up to 3 enemies and pushes them back 0.6 tiles (not bosses)</span></li>
+        <li><b>Autopilot</b><span class="when">30% on kill</span><span class="desc">A mini car drives against traffic: 50% damage to up to 4 enemies and pushes them back 0.8 tiles (not bosses)</span></li>
+        <li><b>Regen Brake</b><span class="lock">Unlocks at Lv8</span><span class="when">20% on hit</span><span class="desc">Slows the enemy by 40% (1.5s)</span></li>
+        <li><b>Convoy</b><span class="lock">Unlocks at Lv16</span><span class="when">Every 10 attacks</span><span class="desc">A mini car drives against traffic: 100% damage to up to 8 enemies and pushes them back 1.5 tiles (not bosses)</span></li>
+      </ul>
+      <h4>How to make</h4>
+      <p class="recipe"><a href="#unit-npu"><img src="../../img/units/npu.png" alt="">NPU</a> <span class="plus">+</span> <a href="#unit-npu"><img src="../../img/units/npu.png" alt="">NPU</a> <span class="plus">+</span> <a href="#unit-battery"><img src="../../img/units/battery.png" alt="">Battery</a> <span class="plus">+</span> <a href="#unit-battery"><img src="../../img/units/battery.png" alt="">Battery</a></p>
     </article>
   </div>
   <dialog id="sheet"><button class="sheet-close" type="button" aria-label="Close">✕</button><div id="sheet-body"></div></dialog>
