@@ -1,0 +1,41 @@
+{
+ "_": "사이트의 경로마다 주인이 하나다. '/'로 끝나면 그 폴더 전부, 아니면 그 파일 하나. 게임을 더하면 '<id>/'를 그 게임 주인으로 더한다.",
+ "company": [
+  "index.html",
+  "en/index.html",
+  "ja/index.html",
+  "about/",
+  "en/about/",
+  "ja/about/",
+  "assets/",
+  "sitemap.xml",
+  "sitemap-main.xml",
+  "app-ads.txt",
+  "CNAME",
+  "owners.json"
+ ],
+ "fabfab": [
+  "fabfab/",
+  "privacy/",
+  "terms/",
+  "refund/",
+  "delete/",
+  "coupon/",
+  "img/",
+  "updates/",
+  "units/",
+  "odds/",
+  "press/",
+  "en/updates/",
+  "en/units/",
+  "en/odds/",
+  "en/press/",
+  "ja/updates/",
+  "ja/units/",
+  "ja/odds/",
+  "ja/press/"
+ ],
+ "gs2": [
+  "gs2/"
+ ]
+}

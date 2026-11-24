@@ -1,4 +1,4 @@
-/* factoryjamgames.com 공통 CSS (구현사항 319 §1·§3). tools/site_gen.py가 /site.css로 복사한다. 약관 다섯 장은 각자 스타일. */
+/* 팹팹 장 CSS (구현사항 319 §1·§3, 347). tools/site_gen.py가 /fabfab/site.css로 복사한다 — 회사 장(/assets/site.css)과 따로라 회사 CSS가 바뀌어도 그대로. 약관 다섯 장은 각자 스타일. */
 :root { --sky: #8fd3ff; --sky2: #d9f1ff; --ink: #1c2238; --card: #ffffff; --accent: #f28c28; --green: #7ccf2a; --muted: #5b6480; --paper: #fff8e6;
   --g0: #cfd6e4; --g1: #9be37a; --g2: #7fc3ff; --g3: #d9a0ff; --g4: #ffcf4d; }
 * { box-sizing: border-box; }
@@ -10,6 +10,10 @@ img { max-width: 100%; }
 
 /* 머리: 상표 · 메뉴 · 언어 */
 header { display: flex; flex-wrap: wrap; align-items: center; gap: 8px 16px; padding: 14px 0 6px; }
+/* 맨 앞 작은 회사 링크 "팩토리잼 ›" (347 §2) — 상표 앞 빵부스러기 */
+.jam { font-size: .85rem; font-weight: 800; color: var(--muted); text-decoration: none; white-space: nowrap; }
+.jam::after { content: "›"; margin-left: 8px; }
+.jam:hover { color: var(--ink); text-decoration: underline; }
 .brand { display: flex; align-items: center; gap: 10px; font-weight: 800; text-decoration: none; font-size: 1.1rem; margin-right: auto; }
 .brand img { width: 36px; height: 36px; border-radius: 8px; image-rendering: pixelated; }
 .langs { display: flex; gap: 4px; }
@@ -100,8 +104,8 @@ html.js .details > .unit:target { display: none; }
 .recipe a img { width: 28px; height: 28px; image-rendering: pixelated; }
 .recipe .plus { color: var(--muted); font-weight: 900; }
 
-/* 개발사 */
-.about p { font-size: 1.05rem; }
+/* 랜딩 맨 아래 팹팹 이야기 (347 §3 — 옛 개발사 장의 문단) */
+.story p { font-size: 1.05rem; margin: 8px 0 0; }
 
 /* 꼬리 */
 footer { margin-top: 40px; padding: 24px 0 40px; border-top: 2px solid rgba(28,34,56,.15); color: var(--muted); font-size: .95rem; }
